@@ -1,0 +1,40 @@
+{
+  "name": "sysinternals",
+  "version": "0.0.0",
+  "description": "Tools for managing Windows Sysinternals utilities",
+  "homepage": "https://github.com/petersandor/sysinternals",
+  "repository": "petersandor/sysinternals",
+  "author": {
+    "name": "Peter Sandor",
+    "email": "peter@petersandor.name",
+    "url": "http://petersandor.name"
+  },
+  "files": [
+    "lib"
+  ],
+  "main": "./lib/index.js",
+  "keywords": [
+    "sysinternals",
+    "windows",
+    "cli",
+    "console",
+    "management",
+    "tool"
+  ],
+  "devDependencies": {
+    "gulp": "^3.6.0",
+    "gulp-eslint": "^0.8.0",
+    "gulp-istanbul": "^0.8.1",
+    "gulp-jscs": "^1.1.0",
+    "gulp-jshint": "^1.5.3",
+    "gulp-mocha": "^2.0.0",
+    "gulp-plumber": "^1.0.0",
+    "jshint-stylish": "^1.0.0",
+    "gulp-coveralls": "^0.1.0",
+    "gulp-babel": "^5.1.0"
+  },
+  "scripts": {
+    "test": "gulp"
+  },
+  "license": "MIT"
+}
