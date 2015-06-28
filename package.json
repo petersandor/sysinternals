@@ -12,7 +12,6 @@
   "files": [
     "lib"
   ],
-  "main": "./lib/index.js",
   "keywords": [
     "sysinternals",
     "windows",
@@ -35,6 +34,10 @@
   },
   "scripts": {
     "test": "gulp"
+  },
+  "preferGlobal": true,
+  "bin": {
+    "sysinternals": "./lib/index.js"
   },
   "license": "MIT"
 }
