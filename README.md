@@ -1,29 +1,69 @@
-# sysinternals [![NPM version][npm-image]][npm-url] [![Build Status][travis-image]][travis-url] [![Dependency Status][daviddm-image]][daviddm-url] [![Coverage percentage][coveralls-image]][coveralls-url]
-> Tools for managing Windows Sysinternals utilities
+# sysinternals [![Build Status](https://travis-ci.org/petersandor/sysinternals.svg?branch=master)](https://travis-ci.org/petersandor/sysinternals)
+
+> Tools for managing Windows Sysinternals utilities (in early development)
+
 
 ## Install
 
-```sh
-$ npm install -g sysinternals
+```
+$ npm install --save sysinternals
 ```
 
 
 ## Usage
 
-```sh
-$ sysinternals -f psfile
+```js
+var sysinternals = require('sysinternals');
+
+sysinternals('unicorns');
+//=> unicorns & rainbows
 ```
+
+
+## CLI
+
+```
+$ npm install --global sysinternals
+```
+```
+$ sysinternals --help
+
+  Usage
+    sysinternals [input]
+
+  Example
+    sysinternals
+    unicorns & rainbows
+
+    sysinternals ponies
+    ponies & rainbows
+
+  Options
+    --foo  Lorem ipsum. Default: false
+```
+
+
+## API
+
+### sysinternals(input, [options])
+
+#### input
+
+*Required*  
+Type: `string`
+
+Lorem ipsum.
+
+#### options
+
+##### foo
+
+Type: `boolean`  
+Default: `false`
+
+Lorem ipsum.
+
 
 ## License
 
-MIT © [Peter Sandor]()
-
-
-[npm-image]: https://badge.fury.io/js/sysinternals.svg
-[npm-url]: https://npmjs.org/package/sysinternals
-[travis-image]: https://travis-ci.org/petersandor/sysinternals.svg?branch=master
-[travis-url]: https://travis-ci.org/petersandor/sysinternals
-[daviddm-image]: https://david-dm.org/petersandor/sysinternals.svg?theme=shields.io
-[daviddm-url]: https://david-dm.org//sysinternals
-[coveralls-image]: https://coveralls.io/repos/petersandor/sysinternals/badge.svg
-[coveralls-url]: https://coveralls.io/r/petersandor/sysinternals
+MIT © [Peter Sandor](http://petersandor.name)
