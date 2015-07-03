@@ -6,17 +6,20 @@ var sysinternals = require('./');
 var cli = meow({
 	help: [
 		'Usage',
-		'  $ sysinternals [input]',
+		'  $ sysinternals <command> [parameters]',
 		'',
-		'Examples',
-		'  $ sysinternals',
-		'  unicorns & rainbows',
+		'Examples of usage',
+		'  $ sysinternals -f "remote file"',
+		'  Found: PsFile v2.11',
+		'  Updated: May 2, 2014',
+		'  Installed: Yes (cmd: psfile)',
 		'',
-		'  $ sysinternals ponies',
-		'  ponies & rainbows',
+		'  $ sysinternals -l --installed ',
+		'  Prints all installed utilities',
 		'',
-		'Options',
-		'  --foo  Lorem ipsum. Default: false'
+		'Commands',
+		'  -f, --find "keywords separated by space" Finds tool by keywords, displays useful information.',
+		'  -l, --list --(installed, not-installed)  Lists Sysinternal utilities. Default: displays all existing',
 	]
 });
 
