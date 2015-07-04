@@ -2,67 +2,33 @@
 
 > Tools for managing Windows Sysinternals utilities (in early development)
 
-
 ## Install
-
-```
-$ npm install --save sysinternals
-```
-
-
-## Usage
-
-```js
-var sysinternals = require('sysinternals');
-
-sysinternals('unicorns');
-//=> unicorns & rainbows
-```
-
-
-## CLI
 
 ```
 $ npm install --global sysinternals
 ```
+
+## Usage
+
 ```
 $ sysinternals --help
 
   Usage
-    sysinternals [input]
+    $ sysinternals <command> [parameters]
 
-  Example
-    sysinternals
-    unicorns & rainbows
+  Examples of usage
+    $ sysinternals -f "remote file"
+    Found: PsFile v2.11
+    Updated: May 2, 2014
+    Installed: Yes (cmd: psfile)
 
-    sysinternals ponies
-    ponies & rainbows
+    $ sysinternals -l --installed
+    Prints all installed utilities
 
-  Options
-    --foo  Lorem ipsum. Default: false
+  Commands
+    -f, --find "keywords separated by space"   Finds tool by keywords, displays useful information.
+    -l, --list (--installed, --not-installed)  Lists Sysinternal utilities. Default: displays all existing
 ```
-
-
-## API
-
-### sysinternals(input, [options])
-
-#### input
-
-*Required*  
-Type: `string`
-
-Lorem ipsum.
-
-#### options
-
-##### foo
-
-Type: `boolean`  
-Default: `false`
-
-Lorem ipsum.
-
 
 ## License
 
