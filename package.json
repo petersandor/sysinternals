@@ -22,9 +22,12 @@
     "cli.js"
   ],
   "keywords": [
-    "cli-app",
+    "sysinternals",
+    "windows",
     "cli",
-    ""
+    "console",
+    "management",
+    "tool"
   ],
   "dependencies": {
     "meow": "^3.3.0"
