@@ -30,6 +30,7 @@
     "tool"
   ],
   "dependencies": {
+    "globby": "^2.1.0",
     "meow": "^3.3.0"
   },
   "devDependencies": {
