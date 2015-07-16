@@ -1,4 +1,5 @@
 #!/usr/bin/env node
+
 'use strict';
 var meow = require('meow');
 var sysinternals = require('./');
@@ -18,9 +19,26 @@ var cli = meow({
 		'  Prints all installed utilities',
 		'',
 		'Commands',
-		'  -f, --find "keywords separated by space" Finds tool by keywords, displays useful information.',
-		'  -l, --list --(installed, not-installed)  Lists Sysinternal utilities. Default: displays all existing',
+		'  -f, --find    Finds tool by keywords, displays useful information.',
+		'  -l, --list    Lists all Sysinternal utilities with details (version, description, local install path).',
 	]
+}, {
+	boolean: [
+		'list'
+	],
+	string: [
+		'find'
+	],
+	alias: {
+		l: 'list',
+		f: 'find'
+	}
 });
 
-console.log(sysinternals(cli.input[0] || 'unicorns'));
+if (cli.flags.find.length) {
+	sysinternals.find(cli.flags.find);
+} else if (cli.flags.list) {
+	sysinternals.list();
+} else {
+	cli.showHelp();
+}
