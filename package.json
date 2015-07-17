@@ -35,6 +35,8 @@
     "meow": "^3.3.0"
   },
   "devDependencies": {
-    "mocha": "*"
+    "mocha": "*",
+    "semver-regex": "^1.0.0",
+    "should": "^7.0.2"
   }
 }

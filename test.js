@@ -1,9 +1,42 @@
 'use strict';
-var assert = require('assert');
-var sysinternals = require('./');
+var exec = require('child_process').exec;
+var semverRegex = require('semver-regex');
+var should = require('should');
 
-describe('Should return unicorns & rainbows', function() {
-	it('returns', function () {
-		assert.strictEqual(sysinternals('unicorns'), 'unicorns & rainbows');
+describe('CLI', function() {
+	var capturedStdout;
+
+	describe('--help', function() {
+		before(function(done) {
+			exec('sysinternals --help', function(error, stdout, stderr) {
+				if (error) {
+					done(error);
+				}
+
+				capturedStdout = stdout;
+				done();
+			});
+		});
+
+		it('shows helps screen', function() {
+			capturedStdout.should.containEql('usage');
+		});
+	});
+
+	describe('--version', function() {
+		before(function(done) {
+			exec('sysinternals --version', function(error, stdout, stderr) {
+				if (error) {
+					done(error);
+				}
+
+				capturedStdout = stdout;
+				done();
+			});
+		});
+
+		it('shows version', function() {
+			capturedStdout.should.match(semverRegex());
+		});
 	});
 });
