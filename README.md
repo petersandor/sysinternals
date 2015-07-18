@@ -26,8 +26,8 @@ $ sysinternals --help
     Prints all installed utilities
 
   Commands
-    -f, --find "keywords separated by space"   Finds tool by keywords, displays useful information.
-    -l, --list (--installed, --not-installed)  Lists Sysinternal utilities. Default: displays all existing
+    -f, --find <keywords>   Finds tool by keywords
+    -l, --list              Lists all Sysinternal utilities with details
 ```
 
 ## License
