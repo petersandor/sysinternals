@@ -35,7 +35,7 @@ var cli = meow({
 	}
 });
 
-if (cli.flags.find.length) {
+if (cli.flags.find && cli.flags.find.length) {
 	sysinternals.find(cli.flags.find);
 } else if (cli.flags.list) {
 	sysinternals.list();
