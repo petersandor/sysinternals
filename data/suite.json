@@ -156,7 +156,7 @@
   },
   {
     "title": "NTFSInfo",
-    "desc": " and MFT-zone, as well as the sizes of the NTFS meta-data files.",
+    "desc": "Use NTFSInfo to see detailed information about NTFS volumes, including the size and location of the Master File Table (MFT) and MFT-zone, as well as the sizes of the NTFS meta-data files.",
     "exe": "ntfsinfo.exe"
   },
   {
