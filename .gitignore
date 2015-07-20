@@ -1,1 +1,4 @@
 node_modules
+
+# Search DB cache
+/_searchdb.json

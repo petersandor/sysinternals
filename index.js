@@ -1,18 +1,31 @@
 'use strict';
 var data = require('./data/suite.json');
 var Tool = require('./lib/models/utility');
+var firstRun = require('first-run');
 var forEach = require('async-foreach').forEach;
 var fulltextsearchlight = require('full-text-search-light');
-var search = new fulltextsearchlight();
+var search;
+
+var DEFAULTS = {
+	searchDb: './_searchdb.json'
+};
 
 /**
  * Sysinternals manager constructor
  */
 
 function Sysinternals() {
-	forEach(data, function(item, index, arr) {
-		search.add(item);
-	});
+	if (firstRun()) {
+		search = new fulltextsearchlight();
+
+		forEach(data, function(item, index, arr) {
+			search.add(item);
+		});
+
+		search.saveSync(DEFAULTS.searchDb);
+	} else {
+		search = fulltextsearchlight.loadSync(DEFAULTS.searchDb);
+	}
 }
 
 /**
@@ -31,7 +44,7 @@ Sysinternals.prototype.find = function(keyword) {
 
 	result = search.search(keyword);
 
-	if(result.length) {
+	if (result.length) {
 		forEach(result, function(item, index, arr) {
 			self.printToolDetails(item);
 		});
