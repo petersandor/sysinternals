@@ -5,6 +5,7 @@ var firstRun = require('first-run');
 var forEach = require('async-foreach').forEach;
 var fulltextsearchlight = require('full-text-search-light');
 var search;
+var Table = require('cli-table2');
 
 var DEFAULTS = {
 	searchDb: './_searchdb.json'
@@ -73,9 +74,22 @@ Sysinternals.prototype.printToolDetails = function(item) {
 	var tool = new Tool(item);
 
 	tool.collectDetails(function(results) {
-		console.log(tool.title);
-		console.log(tool.desc);
-		console.log(results);
+		var table = new Table({
+			wordWrap: true,
+			colWidths: [10, 70],
+		});
+
+		table.push({
+			'Title': tool.title
+		}, {
+			'Desc': tool.desc
+		}, {
+			'Command': tool.exe.slice(0, -4)
+		}, {
+			'Location': results.location.join('\n')
+		});
+
+		console.log(table.toString());
 	});
 };
 

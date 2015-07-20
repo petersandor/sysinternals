@@ -10,17 +10,15 @@ var cli = meow({
 		'  $ sysinternals <command> [parameters]',
 		'',
 		'Examples of usage',
-		'  $ sysinternals -f "remote file"',
-		'  Found: PsFile v2.11',
-		'  Updated: May 2, 2014',
-		'  Installed: Yes (cmd: psfile)',
+		'  $ sysinternals -f psfile',
+		'  Shows details about psfile',
 		'',
-		'  $ sysinternals -l --installed ',
-		'  Prints all installed utilities',
+		'  $ sysinternals -l',
+		'  Lists all available Sysinternals utilities with details',
 		'',
 		'Commands',
-		'  -f, --find    Finds tool by keywords, displays useful information.',
-		'  -l, --list    Lists all Sysinternal utilities with details (version, description, local install path).',
+		'  -f, --find <keyword>    Finds tools by keyword (description or part of name)',
+		'  -l, --list              Lists all available Sysinternals utilities with details',
 	]
 }, {
 	boolean: [
