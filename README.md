@@ -1,6 +1,6 @@
 # sysinternals [![Build Status](https://travis-ci.org/petersandor/sysinternals.svg?branch=master)](https://travis-ci.org/petersandor/sysinternals)
 
-> Tools for managing Windows Sysinternals utilities (in early development)
+> Tools for managing Windows Sysinternals utilities
 
 ## Install
 
@@ -17,17 +17,23 @@ $ sysinternals --help
     $ sysinternals <command> [parameters]
 
   Examples of usage
-    $ sysinternals -f "remote file"
-    Found: PsFile v2.11
-    Updated: May 2, 2014
-    Installed: Yes (cmd: psfile)
+    $ sysinternals -f psfile
+    ┌──────────┬──────────────────────────────────────────────────────────────────────┐
+    │ Title    │ PsFile                                                               │
+    ├──────────┼──────────────────────────────────────────────────────────────────────┤
+    │ Desc     │ See what files are opened remotely.                                  │
+    ├──────────┼──────────────────────────────────────────────────────────────────────┤
+    │ Command  │ psfile                                                               │
+    ├──────────┼──────────────────────────────────────────────────────────────────────┤
+    │ Location │ C:/ProgramData/chocolatey/bin/psfile.exe                             │
+    └──────────┴──────────────────────────────────────────────────────────────────────┘
 
-    $ sysinternals -l --installed
-    Prints all installed utilities
+    $ sysinternals -l
+    Lists all available Sysinternals utilities with details
 
   Commands
-    -f, --find <keywords>   Finds tool by keywords
-    -l, --list              Lists all Sysinternal utilities with details
+    -f, --find <keyword>    Finds tools by keyword (description or part of name)
+    -l, --list              Lists all available Sysinternals utilities with details
 ```
 
 ## License
