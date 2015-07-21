@@ -6,9 +6,10 @@ var forEach = require('async-foreach').forEach;
 var fulltextsearchlight = require('full-text-search-light');
 var search;
 var Table = require('cli-table2');
+var path = require('path');
 
 var DEFAULTS = {
-	searchDb: './_searchdb.json'
+	searchDb: path.join(__dirname, '/_searchdb.json')
 };
 
 /**
