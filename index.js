@@ -85,6 +85,8 @@ Sysinternals.prototype.printToolDetails = function(item) {
 		}, {
 			'Desc': tool.desc
 		}, {
+			'Version': results.version
+		},{
 			'Command': tool.exe.slice(0, -4)
 		}, {
 			'Location': results.location.join('\n')
