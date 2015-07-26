@@ -36,7 +36,8 @@
     "full-text-search-light": "0.0.11",
     "globby": "^2.1.0",
     "is-file-global": "^1.0.0",
-    "meow": "^3.3.0"
+    "meow": "^3.3.0",
+    "ms-wmic": "^1.0.2"
   },
   "devDependencies": {
     "mocha": "*",
