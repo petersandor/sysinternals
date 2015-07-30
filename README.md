@@ -34,6 +34,8 @@ $ sysinternals --help
   Commands
     -f, --find <keyword>    Finds tools by keyword (description or part of name)
     -l, --list              Lists all available Sysinternals utilities with details
+    -h, --help              Shows help
+    -v, --version           Shows version
 ```
 
 ## License

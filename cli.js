@@ -19,6 +19,8 @@ var cli = meow({
 		'Commands',
 		'  -f, --find <keyword>    Finds tools by keyword (description or part of name)',
 		'  -l, --list              Lists all available Sysinternals utilities with details',
+		'  -h, --help              Shows help',
+		'  -v, --version           Shows version'
 	]
 }, {
 	boolean: [
@@ -28,6 +30,8 @@ var cli = meow({
 		'find'
 	],
 	alias: {
+		h: 'help',
+		v: 'version',
 		l: 'list',
 		f: 'find'
 	}
