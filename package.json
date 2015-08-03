@@ -19,7 +19,9 @@
   },
   "files": [
     "index.js",
-    "cli.js"
+    "cli.js",
+    "data",
+    "lib"
   ],
   "keywords": [
     "sysinternals",
