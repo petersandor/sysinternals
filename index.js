@@ -89,7 +89,7 @@ Sysinternals.prototype.printToolDetails = function(item) {
 		},{
 			'Command': tool.exe.slice(0, -4)
 		}, {
-			'Location': results.location.join('\n')
+			'Location': results.location
 		});
 
 		console.log(table.toString());
