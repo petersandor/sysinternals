@@ -1,6 +1,6 @@
 {
   "name": "sysinternals",
-  "version": "0.1.1",
+  "version": "0.1.2",
   "description": "Tool for managing Windows Sysinternals utilities",
   "license": "MIT",
   "repository": "petersandor/sysinternals",
