@@ -77,7 +77,7 @@ Sysinternals.prototype.printToolDetails = function(item) {
 	tool.collectDetails(function(results) {
 		var table = new Table({
 			wordWrap: true,
-			colWidths: [10, 70],
+			colWidths: [10, 65],
 		});
 
 		table.push({
