@@ -7,6 +7,7 @@ var fulltextsearchlight = require('full-text-search-light');
 var search;
 var Table = require('cli-table2');
 var path = require('path');
+var pkg = require('./package');
 
 var DEFAULTS = {
 	searchDb: path.join(__dirname, '/_searchdb.json')
@@ -17,7 +18,7 @@ var DEFAULTS = {
  */
 
 function Sysinternals() {
-	if (firstRun()) {
+	if (firstRun({ name: pkg.name + pkg.version})) {
 		search = new fulltextsearchlight();
 
 		forEach(data, function(item, index, arr) {
