@@ -1,6 +1,11 @@
 # sysinternals [![Build Status](https://travis-ci.org/petersandor/sysinternals.svg?branch=master)](https://travis-ci.org/petersandor/sysinternals)
 
-> Tools for managing Windows Sysinternals utilities
+> Tools for managing [Windows Sysinternals utilities](https://technet.microsoft.com/en-us/sysinternals)
+
+## Prerequisites
+Windows with Sysinternals suite installed (and added in `PATH` variable).
+- Download manually at https://technet.microsoft.com/en-us/sysinternals
+- If you are using [chocolatey](https://chocolatey.org/) just run `choco install sysinternals`.
 
 ## Install
 
