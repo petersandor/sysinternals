@@ -23,15 +23,7 @@ $ sysinternals --help
 
   Examples of usage
     $ sysinternals -f psfile
-    ┌──────────┬──────────────────────────────────────────────────────────────────────┐
-    │ Title    │ PsFile                                                               │
-    ├──────────┼──────────────────────────────────────────────────────────────────────┤
-    │ Desc     │ See what files are opened remotely.                                  │
-    ├──────────┼──────────────────────────────────────────────────────────────────────┤
-    │ Command  │ psfile                                                               │
-    ├──────────┼──────────────────────────────────────────────────────────────────────┤
-    │ Location │ C:/ProgramData/chocolatey/bin/psfile.exe                             │
-    └──────────┴──────────────────────────────────────────────────────────────────────┘
+  	Finds all tools matching given string (either in filename or description which is stored locally in JSON)
 
     $ sysinternals -l
     Lists all available Sysinternals utilities with details
