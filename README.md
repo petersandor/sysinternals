@@ -2,6 +2,9 @@
 
 > Tools for managing [Windows Sysinternals utilities](https://technet.microsoft.com/en-us/sysinternals)
 
+## :warning: WARNING
+This repository is no longer being maintained since I stopped using Windows. Contact me if interested in transfer of ownership.
+
 ## Prerequisites
 Windows with Sysinternals suite installed (and added in `PATH` variable).
 - Download manually at https://technet.microsoft.com/en-us/sysinternals
