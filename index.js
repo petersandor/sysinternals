@@ -5,7 +5,7 @@ var firstRun = require('first-run');
 var forEach = require('async-foreach').forEach;
 var fulltextsearchlight = require('full-text-search-light');
 var search;
-var Table = require('cli-table2');
+var Table = require('cli-table3');
 var path = require('path');
 var pkg = require('./package');
 
